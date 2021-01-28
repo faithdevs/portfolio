@@ -28,7 +28,13 @@ const Content = () => {
   return (
     <Container>
       <Nav>
-        <h1>Hello there 👋🏼!</h1>
+        <h1>
+          Hello there
+          <span role="img" aria-label="emoji">
+            👋🏼
+          </span>
+          !
+        </h1>
       </Nav>
 
       <WriteUp>
