@@ -1,0 +1,26 @@
+@import 'type.css';
+
+* {
+  font-family: 'CircularStd-Book', sans-serif;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+p {
+  font-family: 'Akkurat-Light', sans-serif;
+  font-size: 18px;
+  margin: 0 !important;
+}
