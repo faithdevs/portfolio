@@ -44,6 +44,7 @@ const Container = styled.div`
     grid-template-columns: 1fr;
     grid-gap: 30px;
   }
+
 `;
 
 const HomePage = () => {
@@ -52,6 +53,7 @@ const HomePage = () => {
       <Wrapper>
         <Container>
           <ProfileInfo />
+      
           <Content />
         </Container>
       </Wrapper>

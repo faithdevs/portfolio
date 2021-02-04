@@ -3,25 +3,33 @@ import styled from "styled-components";
 import { Span, Folder, Icons } from "./Setup";
 
 const Container = styled.div`
-  @media (max-width: 769px) {
+  @media (max-width: 7069px) {
     order: 1;
+    margin-top: 400px;
+    
+    
   }
 `;
 
 const Group = styled.div`
-  margin: 0;
+ 
+ 
+  
 `;
 
 const WriteUp = styled.p`
-  padding: 18px 0 0 !important;
+  margin-top: 10px;
+  
   line-height: 1.5;
+  
+
+  
 `;
 
 const Nav = styled.div`
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-auto-flow: column;
-  margin-bottom: 35px;
+  display: flex;
+
+
 `;
 
 const Content = () => {
@@ -31,22 +39,21 @@ const Content = () => {
         <h1>
           Hello there
           <span role="img" aria-label="emoji">
-            👋🏼
+          🙂
           </span>
           !
         </h1>
       </Nav>
 
       <WriteUp>
-        I'm <span>Faith Ugbeshe</span>, a software engineer based in Lagos,
-        Nigeria{" "}
+        I'm <span>Faith Ugbeshe</span>, known as faithdevs, I build stuff that
+        works on the web!{" "}
       </WriteUp>
 
       <Group>
         <WriteUp>
-          I have 3 years of sole experience. I am able to work with the web
-          application backend and build hybrid applications. I am very skilled
-          with PHP and Javascript
+        My motivation for being a software developer comes from the passion I have for problem solving, thinking out-of-the-box or better still, thinking like there is no box. 
+        My passion for developing new innovative ideas and learning tools & methods have made me better today than I was yesterday. I code, build, design & scale full-stack web applications.
         </WriteUp>
 
         <WriteUp>
@@ -64,7 +71,7 @@ const Content = () => {
 
       <div className="box">
         <ul className="directory-list">
-          <Folder>Skills</Folder>
+          <Folder>Languages</Folder>
           <ul className="tools">
             <Icons variant="javascript">
               <span>
@@ -84,6 +91,14 @@ const Content = () => {
               </span>
               <span className="tool">MySQL</span>
             </Icons>
+          </ul>
+        </ul>
+      </div>
+
+      <div className="box">
+        <ul className="directory-list">
+          <Folder>Frameworks</Folder>
+          <ul className="tools">
             <Icons variant="nodejs">
               <span>
                 <i className="fab fa-node-js" />
@@ -117,7 +132,6 @@ const Content = () => {
           </ul>
         </ul>
       </div>
-
       <Group>
         <WriteUp>
           Where can you see my work?{" "}
@@ -132,8 +146,8 @@ const Content = () => {
         </WriteUp>
 
         <WriteUp>
-          Aside from work, I spend lots of time with my family and I love
-          hanging out with my friends too{" "}
+          Aside from work, I spend lots of time with my family{" "}
+          . I also love watching movies. 
         </WriteUp>
         <WriteUp>
           I’m mostly available on{" "}
@@ -144,12 +158,17 @@ const Content = () => {
             email
           </Span>{" "}
           and{" "}
-          <Span variant="default" href="https://instagram.com/faithdevs">
+          <Span variant="default" href="https://instagram.com/mz_ugbeshe">
             instagram
           </Span>{" "}
           . You can send me a message and I’ll reply as soon as I can.
         </WriteUp>
       </Group>
+
+      <div className="footer">
+        <p>&copy; {new Date().getFullYear()} faithdevs</p>
+      </div>
+
     </Container>
   );
 };

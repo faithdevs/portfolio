@@ -1,31 +1,40 @@
 import React from "react";
 import styled from "styled-components";
-import profilePicture from "../img/me.jpeg";
+import profilePicture from "../img/mee.PNG";
+import picture from "../img/InShot_20210112_204740587.jpg";
 import { Span, SVGs } from "./Setup";
 
 const ImageContainer = styled.div`
-  width: 200px;
-
+  width: 300px;
+  
+  
   @media (max-width: 769px) {
+    
     order: 2;
     text-align: center;
-    margin: 30px auto 0;
+    margin-left: 10px ;
     width: 230px;
+  
+   
   }
 `;
 
 const Image = styled.img`
-  max-width: 100%;
+  max-width: 1000px;
   border-radius: 6px;
   object-fit: contain;
+  
+  
+  
+  
 `;
 
 const LogoContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
-  justify-items: center;
-  align-items: center;
+  margin-bottom: 50px;
+ 
 `;
 
 const ProfileInfo = () => {
@@ -43,7 +52,7 @@ const ProfileInfo = () => {
 
         <LogoContainer>
           <a
-            href="https://instagram.com/faithdevs"
+            href="https://instagram.com/mz_ugbeshe"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -122,10 +131,10 @@ const ProfileInfo = () => {
         </LogoContainer>
       </div>
 
-      <div className="footer">
-        <p>&copy; {new Date().getFullYear()} faithdevs</p>
-      </div>
+      <img src={picture} alt="Faith" height={250} width={250} />
     </ImageContainer>
+
+    
   );
 };
 

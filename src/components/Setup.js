@@ -14,18 +14,17 @@ const fontColor = theme.variants("mode", "variant", {
 });
 
 const iconColor = theme.variants("mode", "variant", {
-  default: { light: "#8a8a8a" },
-  javascript: { light: "#F0DB4F" },
-  php: { light: "#787CB5" },
-  react: { light: "#61DBFB" },
-  mysql: { light: "#00758F" },
-  nodejs: { light: "#68A063" },
-  vuejs: { light: "#34495E" },
-  instagram: { light: "#fb3958" },
-  twitter: { light: "#1DA1F2" },
-  github: { light: "#3E2C00" },
-  laravel: { light: "#6C6C6C" },
-  firebase: { light: "#F5820D" },
+  default: { light: "#8a8a8a", dark: "#BB6B89" },
+  javascript: { light: "#F0DB4F", dark: "#F0DB4F" },
+  php: { light: "#787CB5", dark: "#474A8A" },
+  python: { light: "#4B8BBE", dark: "#FFD43B" },
+  mysql: { light: "#00758F", dark: "#F29111" },
+  nodejs: { light: "#68A063", dark: "#3C873A" },
+  vuejs: { light: "#34495E", dark: "#41B883" },
+  instagram: { light: "#fb3958", dark: "#fb3958" },
+  twitter: { light: "#1DA1F2", dark: "#1DA1F2" },
+  github: { light: "#3E2C00", dark: "#F1502F" },
+  laravel: { light: "#6C6C6C", dark: "#F05340" },
 });
 
 export const Span = styled.a`
