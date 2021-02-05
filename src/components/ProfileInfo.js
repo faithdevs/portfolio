@@ -112,7 +112,7 @@ const ProfileInfo = () => {
             </SVGs>
           </a>
           <a
-            href="https://linkedin.com/faithdevs"
+            href="https://www.linkedin.com/in/faithdevs/"
             target="_blank"
             rel="noopener noreferrer"
           >
