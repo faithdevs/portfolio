@@ -3,11 +3,9 @@ import styled from "styled-components";
 import { Span, Folder, Icons } from "./Setup";
 
 const Container = styled.div`
-  @media (max-width: 7069px) {
-    order: 1;
+  order: 1;
+  @media (min-width: 1025px) {
     margin-top: 400px;
-    
-    
   }
 `;
 
@@ -21,9 +19,6 @@ const WriteUp = styled.p`
   margin-top: 10px;
   
   line-height: 1.5;
-  
-
-  
 `;
 
 const Nav = styled.div`

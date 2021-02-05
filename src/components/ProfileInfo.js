@@ -1,21 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import profilePicture from "../img/mee.PNG";
-import picture from "../img/InShot_20210112_204740587.jpg";
+import profilePicture from "../img/me.jpg";
+import picture from "../img/bgImg.PNG";
 import { Span, SVGs } from "./Setup";
 
 const ImageContainer = styled.div`
   width: 300px;
   
-  
   @media (max-width: 769px) {
-    
     order: 2;
     text-align: center;
     margin-left: 10px ;
     width: 230px;
-  
-   
   }
 `;
 
@@ -23,10 +19,18 @@ const Image = styled.img`
   max-width: 1000px;
   border-radius: 6px;
   object-fit: contain;
-  
-  
-  
-  
+  @media (max-width: 769px) {
+    height: auto;
+    width: 100%;
+  }
+`;
+
+const ProfileImage = styled.img`
+  width: 250px;
+  height: 250px;
+  @media (max-width: 769px) {
+    display: none;
+  }
 `;
 
 const LogoContainer = styled.div`
@@ -40,7 +44,7 @@ const LogoContainer = styled.div`
 const ProfileInfo = () => {
   return (
     <ImageContainer>
-      <Image src={profilePicture} alt="Faith_Ugbeshe" />
+      <Image src={picture} alt="Faith_Ugbeshe" />
       <div style={{ marginTop: "10px" }}>
         <h4 className="contact">Get in touch</h4>
         <Span
@@ -130,8 +134,7 @@ const ProfileInfo = () => {
           </a>
         </LogoContainer>
       </div>
-
-      <img src={picture} alt="Faith" height={250} width={250} />
+      <ProfileImage src={profilePicture} alt="Faith_Ugbeshe"/>
     </ImageContainer>
 
     
